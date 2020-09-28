@@ -16,7 +16,7 @@
 <div class="main">
     <ul>
         {#each fetchTodos as todo, index (todo)}
-            <li in:fade out:fade={{ duration: 100 }} animate:flip={{}}>
+            <li in:fade out:fade={{ duration: 100 }} animate:flip={{ duration: 1000 }}>
                 <TodoItem {todo} {handleCheckTodo} {editMode} {handleChangeEditMode} {handleEditTodoItem} {handleRemoveTodo} />
             </li>
         {/each}
