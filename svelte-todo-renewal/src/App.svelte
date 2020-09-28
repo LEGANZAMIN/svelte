@@ -1,11 +1,6 @@
 <script>
-    import TodoList from "./components/TodoList.svelte";
-    import TodoHeader from "./components/TodoHeader.svelte";
-    import TodoInfo from "./components/TodoInfo.svelte";
+    import { Router } from "@sveltech/routify";
+    import { routes } from "@sveltech/routify/tmp/routes";
 </script>
 
-<div class="app">
-    <TodoHeader />
-    <TodoInfo />
-    <TodoList />
-</div>
+<Router {routes} />
